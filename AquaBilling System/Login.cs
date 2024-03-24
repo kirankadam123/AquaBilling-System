@@ -19,7 +19,7 @@ namespace AquaBilling_System
 
     public partial class Login : Form
     {
-        public static string Username { get; set; }
+        public static string Username;
         //public static string Role { get; set; }
 
         private string connectionString = ConfigurationManager.ConnectionStrings["AquaConnection"].ConnectionString;

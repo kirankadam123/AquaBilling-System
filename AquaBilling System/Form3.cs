@@ -41,8 +41,13 @@ namespace AquaBilling_System
                         cmd.Parameters.AddWithValue("@i", textBox1.Text);
 
                         int c = cmd.ExecuteNonQuery();
-                        if(c==0)
-                        MessageBox.Show($"Password update failed for {selectedRole}.");
+                        if (c == 0)
+                        {
+                            MessageBox.Show($"Password update failed for {selectedRole}.");
+                            textBox1.Text="";
+                            textBox2.Text="";
+                        }
+
                         else
                         {
                             MessageBox.Show($"Password updated Successfully for {selectedRole}.");

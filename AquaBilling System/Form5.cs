@@ -69,7 +69,7 @@ namespace AquaBilling_System
             string[] s = { "AB4cDy", "StOP92", "WQ86FD", "E8VGrI", "PRfDs5", "DMB4cD", "QtO4P9", "GF86FD", "UYTnrI", "P58Ds5" };
             Random r=new Random();
 
-            int n = r.Next(0, s.Length);
+            int n = r.Next(s.Length);
             string selString;
             switch (n)
             {

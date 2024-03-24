@@ -238,7 +238,7 @@ namespace AquaBilling_System
                                     // Retrieve the updated row's quantity column value
                                     int qu = Convert.ToInt32(ur["Quantity"]);
                                     s = s + qu;
-                                    MessageBox.Show(" " + s);
+                                    
                                 }
                             }
                             String p = "update Supplier set [Available_Quantity(in ltr)]=[Available_Quantity(in ltr)]-@s where Supplier_id=@i";
